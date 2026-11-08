@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "nohostilemobs",
+	"version": "${version}",
+	"name": "No Hostile Mobs For You",
+	"description": "Keeps hostile mobs away from you: repels or removes them inside a radius and blocks hostile spawns nearby. Works in singleplayer with just the client installed.",
+	"authors": [
+		"Cinoxx"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/nohostilemobs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.cnxx.nohostilemobs.NoHostileMobs"
+		],
+		"client": [
+			"dev.cnxx.nohostilemobs.client.NoHostileMobsClient"
+		]
+	},
+	"mixins": [
+		"nohostilemobs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
